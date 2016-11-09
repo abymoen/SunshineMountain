@@ -13,28 +13,30 @@
         android:layout_height="300dp"
         android:src="@drawable/skierimage"
         android:layout_alignParentTop="true"
-        android:id="@+id/main-skier-pic"/>
+        android:id="@+id/mainSkierPic"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/main-skier-pic"
+        android:layout_alignBottom="@+id/mainSkierPic"
         android:text="Skiers and snowboarders"
-        android:id="@+id/main-skier-button" />
+        android:id="@+id/mainSkierButton"
+        android:background="#D3F5FF" />
 
     <ImageView
         android:layout_width="match_parent"
         android:src="@drawable/natureimage"
         android:layout_height="300dp"
         android:layout_alignParentBottom="true"
-        android:id="@+id/main-nature-pic"
+        android:id="@+id/mainNaturePic"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/main-nature-pic"
+        android:layout_alignBottom="@+id/mainNaturePic"
         android:text="Non-Skiers and Non-snowboarders"
-        android:id="@+id/main-nature-button"/>
+        android:id="@+id/mainNatureButton"
+        android:background="#88E8A1"/>
 
 
 </RelativeLayout>
