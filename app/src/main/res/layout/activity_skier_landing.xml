@@ -36,18 +36,30 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <ImageView
+        <ImageButton
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
-        <ImageView
+            android:layout_height="match_parent"
+            android:src="@drawable/snowflake"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:id="@+id/weatherButton"/>
+        <ImageButton
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
-        <ImageView
+            android:layout_height="match_parent"
+            android:src="@drawable/trail"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:id="@+id/trailButton"/>
+        <ImageButton
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:src="@drawable/dollar"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:id="@+id/pricesButton"/>
     </LinearLayout>
 
     <LinearLayout
@@ -57,18 +69,30 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <ImageView
+        <ImageButton
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
-        <ImageView
+            android:layout_height="match_parent"
+            android:src="@drawable/bus"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:id="@+id/transportButton"/>
+        <ImageButton
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
-        <ImageView
+            android:layout_height="match_parent"
+            android:src="@drawable/home"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:id="@+id/hotelButton"/>
+        <ImageButton
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:src="@drawable/phone"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:id="@+id/contactButton"/>
     </LinearLayout>
 
 
