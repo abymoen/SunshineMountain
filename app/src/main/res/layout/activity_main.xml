@@ -10,17 +10,17 @@
     android:weightSum="10"
     android:background="#FFFFFF"
     >
-
     <Button
         android:layout_width="300dp"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:layout_alignBottom="@+id/mainSkierPic"
-        android:text="Skiers and snowboarders"
-        android:id="@+id/mainSkierButton"
+        android:layout_alignBottom="@+id/mainNaturePic"
+        android:text="Non-Skiers and Non-snowboarders"
+        android:id="@+id/mainNatureButton"
         android:layout_marginTop="25dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/roundcorners"/>
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -32,9 +32,9 @@
         android:layout_width="300dp"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:layout_alignBottom="@+id/mainNaturePic"
-        android:text="Non-Skiers and Non-snowboarders"
-        android:id="@+id/mainNatureButton"
+        android:layout_alignBottom="@+id/mainSkierPic"
+        android:text="Skiers and snowboarders"
+        android:id="@+id/mainSkierButton"
         android:layout_marginBottom="25dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/roundcorners"/>

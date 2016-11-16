@@ -2,6 +2,7 @@ package com.example.aebymoen.sunshinemountain;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,12 @@ import android.widget.ImageButton;
 public class SkierLandingActivity extends AppCompatActivity {
 
     ImageButton trails;
+    ImageButton weather;
+    ImageButton transportation;
+    ImageButton hotels;
+    ImageButton prices;
+    ImageButton contact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
