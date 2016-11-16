@@ -1,10 +1,15 @@
 package com.example.aebymoen.sunshinemountain;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
 
@@ -50,10 +55,26 @@ public class CustomRunListViewAdapter extends BaseAdapter{
             view = inflater.inflate(R.layout.runrow, null);
             TextView run = (TextView) view.findViewById(R.id.runNameTextView);
             TextView status = (TextView) view.findViewById(R.id.runStatusTextView);
+            ImageView diff = (ImageView) view.findViewById(R.id.runDiffImageView);
+
             HashMap<String, String> data = new HashMap<>();
             data = mData.get(position);
             run.setText(data.get("run"));
+
             status.setText(data.get("status"));
+            if(data.get("status").equals("CLOSED")) {
+                status.setTextColor(Color.RED);
+            }
+
+            if(data.get("difficulty").equals("GREEN")) {
+                diff.setImageResource(R.drawable.greentriangle);
+            } else if(data.get("difficulty").equals("BLUE")) {
+                diff.setImageResource(R.drawable.bluesquare);
+            } else if(data.get("difficulty").equals("BLACK")) {
+                diff.setImageResource(R.drawable.blackdiamond);
+            } else if(data.get("difficulty").equals("DOUBLE")) {
+                diff.setImageResource(R.drawable.doubleblackdiamond);
+            }
         }
 
         return view;

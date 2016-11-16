@@ -41,11 +41,23 @@ public class TrailsActivity extends AppCompatActivity {
                 "OPEN"
         };
 
+        String[] difficulty = new String[] {
+                "GREEN",
+                "GREEN",
+                "BLUE",
+                "BLUE",
+                "BLACK",
+                "BLACK",
+                "DOUBLE",
+                "DOUBLE"
+        };
+
         ArrayList<HashMap<String,String>> runList = new ArrayList<>();
         for(int i=0; i<8; i++) {
             HashMap<String,String> data = new HashMap<>();
             data.put("run", runs[i]);
             data.put("status",status[i]);
+            data.put("difficulty",difficulty[i]);
             runList.add(data);
         }
 
