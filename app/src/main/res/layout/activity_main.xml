@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.aebymoen.sunshinemountain.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#FFFFFF"
     >
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/skierimage"
-        android:layout_alignParentTop="true"
-        android:id="@+id/mainSkierPic"/>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_alignBottom="@+id/mainSkierPic"
         android:text="Skiers and snowboarders"
         android:id="@+id/mainSkierButton"
-        android:background="#D3F5FF" />
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundcorners"/>
 
     <ImageView
         android:layout_width="match_parent"
-        android:src="@drawable/natureimage"
-        android:layout_height="300dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/mainNaturePic"
-        />
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:src="@drawable/sunshinelogo"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:layout_alignBottom="@+id/mainNaturePic"
         android:text="Non-Skiers and Non-snowboarders"
         android:id="@+id/mainNatureButton"
-        android:background="#88E8A1"/>
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundcorners"/>
 
 
-</RelativeLayout>
+</LinearLayout>

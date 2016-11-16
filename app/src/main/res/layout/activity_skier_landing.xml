@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:src="@drawable/newsbanner"/>
+            android:src="@drawable/newsbanner"
+            android:background="@drawable/bannerborder"/>
 
     </LinearLayout>
 
@@ -42,7 +43,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/snowflake"
             android:layout_margin="20dp"
-            android:background="#000000"
+            android:background="@drawable/roundimage"
             android:id="@+id/weatherButton"/>
         <ImageButton
             android:layout_width="0dp"
@@ -50,7 +51,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/trail"
             android:layout_margin="20dp"
-            android:background="#000000"
+            android:background="@drawable/roundimage"
             android:id="@+id/trailButton"/>
         <ImageButton
             android:layout_width="0dp"
@@ -58,7 +59,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/dollar"
             android:layout_margin="20dp"
-            android:background="#000000"
+            android:background="@drawable/roundimage"
             android:id="@+id/pricesButton"/>
     </LinearLayout>
 
@@ -75,7 +76,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/bus"
             android:layout_margin="20dp"
-            android:background="#000000"
+            android:background="@drawable/roundimage"
             android:id="@+id/transportButton"/>
         <ImageButton
             android:layout_width="0dp"
@@ -83,7 +84,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/home"
             android:layout_margin="20dp"
-            android:background="#000000"
+            android:background="@drawable/roundimage"
             android:id="@+id/hotelButton"/>
         <ImageButton
             android:layout_width="0dp"
@@ -91,7 +92,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/phone"
             android:layout_margin="20dp"
-            android:background="#000000"
+            android:background="@drawable/roundimage"
             android:id="@+id/contactButton"/>
     </LinearLayout>
 
