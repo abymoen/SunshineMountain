@@ -94,8 +94,8 @@ public class TrailsActivity extends AppCompatActivity {
                     checked.add("BLUE");
                     checked.add("BLACK");
                     checked.add("DOUBLE");
-                } else if(runFilterGroup.getCheckedRadioButtonId() == -1 &&
-                        (green.isChecked()) || (blue.isChecked()) || (black.isChecked()) || (doubleBlack.isChecked())) {
+                } else if((runFilterGroup.getCheckedRadioButtonId() == -1) &&
+                        ((green.isChecked()) || (blue.isChecked()) || (black.isChecked()) || (doubleBlack.isChecked()))) {
                     if(green.isChecked()) checked.add("GREEN");
                     if(blue.isChecked()) checked.add("BLUE");
                     if(black.isChecked()) checked.add("BLACK");
