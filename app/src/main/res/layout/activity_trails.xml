@@ -11,50 +11,90 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:text="TRAIL INFO"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:gravity="center"
         android:textColor="#C9C200"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        />
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="horizontal"
         android:layout_weight="1"
-        android:text="CHAIRLIFTS"
-        android:textSize="25dp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
+        android:weightSum="2"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CHAIRLIFTS"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Filter Lifts"
+            android:background="@drawable/roundcorners"
+            android:id="@+id/chairliftFilterButton"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
 
     <ListView
         android:dividerHeight="2dp"
         android:divider="#000000"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:id="@+id/chairListView">
+        android:layout_weight="3.5"
+        android:id="@+id/chairListView"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
     </ListView>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="horizontal"
         android:layout_weight="1"
-        android:text="RUNS"
-        android:textSize="25dp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RUNS"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Filter Runs"
+            android:background="@drawable/roundcorners"
+            android:id="@+id/runsFilterButton"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
 
     <ListView
         android:dividerHeight="2dp"
         android:divider="#000000"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="3.5"
         android:layout_marginBottom="10dp"
-        android:id="@+id/runListView">
+        android:id="@+id/runListView"
+        android:layout_marginTop="15dp">
     </ListView>
 
 </LinearLayout>

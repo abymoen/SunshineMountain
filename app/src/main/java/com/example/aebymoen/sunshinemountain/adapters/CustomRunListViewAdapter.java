@@ -1,4 +1,4 @@
-package com.example.aebymoen.sunshinemountain;
+package com.example.aebymoen.sunshinemountain.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,6 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
+
+import com.example.aebymoen.sunshinemountain.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,33 +52,48 @@ public class CustomRunListViewAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        ViewHolderItem viewHolderItem;
         View view = convertView;
+
         if(convertView == null) {
             view = inflater.inflate(R.layout.runrow, null);
-            TextView run = (TextView) view.findViewById(R.id.runNameTextView);
-            TextView status = (TextView) view.findViewById(R.id.runStatusTextView);
-            ImageView diff = (ImageView) view.findViewById(R.id.runDiffImageView);
+            viewHolderItem = new ViewHolderItem();
+            viewHolderItem.runName = (TextView) view.findViewById(R.id.runNameTextView);
+            viewHolderItem.status = (TextView) view.findViewById(R.id.runStatusTextView);
+            viewHolderItem.diffPic = (ImageView) view.findViewById(R.id.runDiffImageView);
+            view.setTag(viewHolderItem);
+        } else {
+            viewHolderItem = (ViewHolderItem) view.getTag();
+        }
 
-            HashMap<String, String> data = new HashMap<>();
-            data = mData.get(position);
-            run.setText(data.get("run"));
+        HashMap<String, String> data = new HashMap<>();
+        data = mData.get(position);
+        viewHolderItem.runName.setText(data.get("run"));
 
-            status.setText(data.get("status"));
+        viewHolderItem.status.setText(data.get("status"));
+        if(data.get("status") != null) {
             if(data.get("status").equals("CLOSED")) {
-                status.setTextColor(Color.RED);
+                viewHolderItem.status.setTextColor(Color.RED);
             }
 
             if(data.get("difficulty").equals("GREEN")) {
-                diff.setImageResource(R.drawable.greentriangle);
+                viewHolderItem.diffPic.setImageResource(R.drawable.greentriangle);
             } else if(data.get("difficulty").equals("BLUE")) {
-                diff.setImageResource(R.drawable.bluesquare);
+                viewHolderItem.diffPic.setImageResource(R.drawable.bluesquare);
             } else if(data.get("difficulty").equals("BLACK")) {
-                diff.setImageResource(R.drawable.blackdiamond);
+                viewHolderItem.diffPic.setImageResource(R.drawable.blackdiamond);
             } else if(data.get("difficulty").equals("DOUBLE")) {
-                diff.setImageResource(R.drawable.doubleblackdiamond);
+                viewHolderItem.diffPic.setImageResource(R.drawable.doubleblackdiamond);
             }
         }
-
         return view;
     }
+
+    static class ViewHolderItem {
+        TextView runName;
+        TextView status;
+        ImageView diffPic;
+    }
 }
+
+

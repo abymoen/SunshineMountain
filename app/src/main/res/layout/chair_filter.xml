@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chairFilterOptions"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/closedOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPEN ONLY" />
+
+        <RadioButton
+            android:id="@+id/openOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/closedOption"
+            android:text="CLOSED ONLY" />
+
+        <RadioButton
+            android:id="@+id/bothOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/openOption"
+            android:text="BOTH" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/chairFilterOkButton"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

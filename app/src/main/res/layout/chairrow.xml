@@ -23,11 +23,12 @@
             android:textSize="20dp"
             android:layout_margin="10dp"
             android:layout_gravity="center_vertical"
-            android:id="@+id/runNameTextView"/>
+            android:gravity="center_horizontal"
+            android:id="@+id/chairNameTextView"/>
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_height="wrap_content"
             android:text="OPEN"
             android:textColor="#5EB623"
@@ -35,14 +36,10 @@
             android:textSize="20dp"
             android:layout_margin="3dp"
             android:layout_gravity="center_vertical"
-            android:id="@+id/runStatusTextView"/>
+            android:gravity="center_horizontal"
+            android:id="@+id/chairStatusTextView"/>
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="50dp"
-            android:id="@+id/runDiffImageView"
-            android:src="@drawable/blackdiamond"/>
+
     </LinearLayout>
 
 </RelativeLayout>
