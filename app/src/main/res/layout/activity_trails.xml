@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context="com.example.aebymoen.sunshinemountain.TrailsActivity">
+    tools:context="com.example.aebymoen.sunshinemountain.TrailsActivity"
+    android:background="#E3F8FF">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         android:text="TRAIL INFO"
         android:textSize="30dp"
         android:gravity="center"
-        android:textColor="#C9C200"
+        android:textColor="#1388FF"
         android:textStyle="bold"
         />
 
@@ -31,16 +32,16 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:text="CHAIRLIFTS"
             android:textSize="25dp"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="#1388FF"
             android:textStyle="bold"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:text="Filter Lifts"
             android:background="@drawable/roundcorners"
             android:id="@+id/chairliftFilterButton"
@@ -69,16 +70,16 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:text="RUNS"
             android:textSize="25dp"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="#1388FF"
             android:textStyle="bold"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:text="Filter Runs"
             android:background="@drawable/roundcorners"
             android:id="@+id/runsFilterButton"

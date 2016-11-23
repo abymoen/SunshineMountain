@@ -73,7 +73,7 @@ public class CustomRunListViewAdapter extends BaseAdapter{
         viewHolderItem.status.setText(data.get("status"));
         if(data.get("status") != null) {
             if(data.get("status").equals("CLOSED")) {
-                viewHolderItem.status.setTextColor(Color.RED);
+                viewHolderItem.status.setTextColor(Color.BLACK);
             }
 
             if(data.get("difficulty").equals("GREEN")) {

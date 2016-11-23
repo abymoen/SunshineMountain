@@ -60,7 +60,7 @@ public class CustomChairListViewAdapter extends BaseAdapter {
             viewHolder.chairName = (TextView) view.findViewById(R.id.chairNameTextView);
             viewHolder.status = (TextView) view.findViewById(R.id.chairStatusTextView);
             if(data.get("status").equals("CLOSED")) {
-                viewHolder.status.setTextColor(Color.RED);
+                viewHolder.status.setTextColor(Color.BLACK);
             }
             view.setTag(viewHolder);
         } else {

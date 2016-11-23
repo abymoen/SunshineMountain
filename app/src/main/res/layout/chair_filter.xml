@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/filter_bg">
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -13,21 +14,24 @@
             android:id="@+id/closedOption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OPEN ONLY" />
+            android:text="OPEN ONLY"
+            android:textSize="20dp"/>
 
         <RadioButton
             android:id="@+id/openOption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/closedOption"
-            android:text="CLOSED ONLY" />
+            android:text="CLOSED ONLY"
+            android:textSize="20dp"/>
 
         <RadioButton
             android:id="@+id/bothOption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/openOption"
-            android:text="BOTH" />
+            android:text="BOTH"
+            android:textSize="20dp"/>
     </RadioGroup>
 
     <Button

@@ -180,6 +180,10 @@ public class TrailsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 chairFilterGroup = (RadioGroup) chairOptions.findViewById(R.id.chairFilterOptions);
                 int selected = chairFilterGroup.getCheckedRadioButtonId();
+                if(selected == -1) {
+                    chairOptions.cancel();
+                    return;
+                }
                 chairFilterSelected = (RadioButton) chairOptions.findViewById(selected);
                 if(chairFilterSelected.getText().equals("BOTH")) {
                     filterAllChairs();

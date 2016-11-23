@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.aebymoen.sunshinemountain.SkierLandingActivity"
-    android:background="#FFFFFF"
+    android:background="#E3F8FF"
     android:orientation="vertical"
     android:weightSum="4">
 
@@ -23,7 +23,7 @@
                 android:text="WELCOME"
                 android:textSize="50dp"
                 android:gravity="center"
-                android:textColor="#C9C200"
+                android:textColor="#1388FF"
                 android:textStyle="bold"
                 />
 
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:weightSum="3"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.9"
         android:orientation="horizontal">
 
         <ImageButton
@@ -70,9 +70,42 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="WEATHER"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TRAIL INFO"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="PRICES"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:weightSum="3"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.9"
         android:orientation="horizontal">
 
         <ImageButton
@@ -101,5 +134,37 @@
             android:id="@+id/contactButton"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TRANSPORT"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="HOTEL LODGING"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CONTACT US"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
 </LinearLayout>
