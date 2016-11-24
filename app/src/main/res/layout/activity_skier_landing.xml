@@ -16,12 +16,18 @@
             android:orientation="vertical"
             android:weightSum="3">
 
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/weather_banner"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:text="WELCOME"
-                android:textSize="50dp"
+                android:textSize="25dp"
                 android:gravity="center"
                 android:textColor="#1388FF"
                 android:textStyle="bold"
@@ -39,7 +45,7 @@
         android:layout_width="match_parent"
         android:weightSum="3"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
+        android:layout_weight="0.7"
         android:orientation="horizontal">
 
         <ImageButton
@@ -47,7 +53,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/snowflake"
-            android:layout_margin="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/roundimage"
             android:id="@+id/weatherButton"/>
         <ImageButton
@@ -55,7 +62,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/trail"
-            android:layout_margin="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/roundimage"
             android:id="@+id/trailButton"/>
         <ImageButton
@@ -63,7 +71,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/dollar"
-            android:layout_margin="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/roundimage"
             android:id="@+id/pricesButton"/>
     </LinearLayout>
@@ -71,7 +80,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.3"
         android:orientation="horizontal"
         android:weightSum="3">
 
@@ -81,7 +90,9 @@
             android:layout_weight="1"
             android:text="WEATHER"
             android:gravity="center_horizontal"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#1388FF"/>
 
         <TextView
             android:layout_width="0dp"
@@ -89,7 +100,9 @@
             android:layout_weight="1"
             android:text="TRAIL INFO"
             android:gravity="center_horizontal"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#1388FF"/>
 
         <TextView
             android:layout_width="0dp"
@@ -97,7 +110,9 @@
             android:layout_weight="1"
             android:text="PRICES"
             android:gravity="center_horizontal"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#1388FF"/>
 
     </LinearLayout>
 
@@ -105,7 +120,7 @@
         android:layout_width="match_parent"
         android:weightSum="3"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
+        android:layout_weight="0.7"
         android:orientation="horizontal">
 
         <ImageButton
@@ -113,7 +128,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/bus"
-            android:layout_margin="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/roundimage"
             android:id="@+id/transportButton"/>
         <ImageButton
@@ -121,7 +137,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/home"
-            android:layout_margin="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/roundimage"
             android:id="@+id/hotelButton"/>
         <ImageButton
@@ -129,7 +146,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/phone"
-            android:layout_margin="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/roundimage"
             android:id="@+id/contactButton"/>
     </LinearLayout>
@@ -137,7 +155,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.3"
         android:orientation="horizontal"
         android:weightSum="3">
 
@@ -147,7 +165,9 @@
             android:layout_weight="1"
             android:text="TRANSPORT"
             android:gravity="center_horizontal"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#1388FF"/>
 
         <TextView
             android:layout_width="0dp"
@@ -155,7 +175,9 @@
             android:layout_weight="1"
             android:text="HOTEL LODGING"
             android:gravity="center_horizontal"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#1388FF"/>
 
         <TextView
             android:layout_width="0dp"
@@ -163,7 +185,9 @@
             android:layout_weight="1"
             android:text="CONTACT US"
             android:gravity="center_horizontal"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#1388FF"/>
 
     </LinearLayout>
 
