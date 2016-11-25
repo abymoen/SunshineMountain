@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aebymoen.sunshinemountain.WeatherActivity"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="#E3F8FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="WEATHER"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#1388FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:text="SNOW REPORT"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#1388FF"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3.3"
+        android:id="@+id/snowStatsWeather"
+        android:text="Past 24 hours: 5cm\nPast Week: 25cm\nYear to Date: 300cm\nRuns Open: 6\nLifts Open: 4"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:src="@drawable/currentweather"
+        android:id="@+id/weatherImage"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CURRENT"
+            android:background="@drawable/clickedbutton"
+            android:layout_marginRight="10dp"
+            android:id="@+id/currentButton"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="HOURLY"
+            android:background="@drawable/roundcorners"
+            android:layout_marginRight="10dp"
+            android:id="@+id/hourlyButton"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="WEEKLY"
+            android:background="@drawable/roundcorners"
+            android:id="@+id/weeklyButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
