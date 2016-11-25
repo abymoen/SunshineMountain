@@ -67,8 +67,10 @@ public class TrailsActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         Intent clickIntent = new Intent(TrailsActivity.this, MapActivity.class);
+                        TextView ts = (TextView) view.findViewById(R.id.runNameTextView);
+                        String S = ts.getText().toString();
 
-                        clickIntent.putExtra(EXTRA_POSITION, Integer.toString(position));
+                        clickIntent.putExtra(EXTRA_POSITION, S);
                         startActivity(clickIntent);
                     }
                 }
