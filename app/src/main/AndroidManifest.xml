@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SkierLandingActivity" />
-        <activity android:name=".TrailsActivity"></activity>
+        <activity android:name=".TrailsActivity" />
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>
