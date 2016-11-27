@@ -1,6 +1,7 @@
 package com.example.aebymoen.sunshinemountain;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,9 +13,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.example.aebymoen.sunshinemountain.adapters.CustomChairListViewAdapter;
 import com.example.aebymoen.sunshinemountain.adapters.CustomRunListViewAdapter;
@@ -32,6 +35,7 @@ public class TrailsActivity extends AppCompatActivity {
     private AlertDialog.Builder dialog;
     private RadioGroup chairFilterGroup, runFilterGroup;
     private RadioButton chairFilterSelected, runFilterSelected;
+    public final static String EXTRA_POSITION = "com.example.aebymoen.POSITION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +45,7 @@ public class TrailsActivity extends AppCompatActivity {
         runFilter = (Button) findViewById(R.id.runsFilterButton);
         filterAllChairs();
         filterAllRuns();
-
+        settingClicks();
         chairFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,6 +58,23 @@ public class TrailsActivity extends AppCompatActivity {
                 runFilterPopup();
             }
         });
+    }
+
+    public void settingClicks(){
+        listView.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent clickIntent = new Intent(TrailsActivity.this, MapActivity.class);
+                        TextView ts = (TextView) view.findViewById(R.id.runNameTextView);
+                        String S = ts.getText().toString();
+
+                        clickIntent.putExtra(EXTRA_POSITION, S);
+                        startActivity(clickIntent);
+                    }
+                }
+
+        );
     }
 
     public void runFilterPopup() {

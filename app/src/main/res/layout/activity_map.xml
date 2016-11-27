@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/runone"
+    android:id="@+id/mapview">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/backarrow"
+        android:id="@+id/backarrowbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="clickedBack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLACEHOLDER"
+        android:background="#000000"
+        android:textSize="30sp"
+        android:id="@+id/mapID"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>
