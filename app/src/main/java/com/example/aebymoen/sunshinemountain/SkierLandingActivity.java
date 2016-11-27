@@ -31,5 +31,14 @@ public class SkierLandingActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        weather = (ImageButton) findViewById(R.id.weatherButton);
+        weather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SkierLandingActivity.this, WeatherActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
