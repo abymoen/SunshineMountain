@@ -21,10 +21,18 @@
         android:textColor="#1388FF"
         android:textStyle="bold"/>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:src="@drawable/currentweather"
+        android:id="@+id/weatherImage"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="0.7"
+        android:layout_weight="1"
         android:text="SNOW REPORT"
         android:layout_gravity="center_horizontal"
         android:textColor="#1388FF"
@@ -33,20 +41,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="3.3"
+        android:layout_weight="4"
         android:id="@+id/snowStatsWeather"
         android:text="Past 24 hours: 5cm\nPast Week: 25cm\nYear to Date: 300cm\nRuns Open: 6\nLifts Open: 4"
         android:layout_gravity="center_horizontal"
         android:textColor="#000000"
         android:textStyle="bold" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="11"
-        android:src="@drawable/currentweather"
-        android:id="@+id/weatherImage"
-        />
 
     <LinearLayout
         android:layout_width="match_parent"

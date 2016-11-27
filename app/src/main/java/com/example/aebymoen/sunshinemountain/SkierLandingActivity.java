@@ -40,5 +40,14 @@ public class SkierLandingActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        prices = (ImageButton) findViewById(R.id.pricesButton);
+        prices.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(SkierLandingActivity.this, PricesActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
